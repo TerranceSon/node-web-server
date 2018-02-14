@@ -16,9 +16,9 @@ app.use((req, res, next) => {
   next()
 });
 
-app.use((req, res, next) => {
-  res.send("Site is under maintanen")
-});
+// app.use((req, res, next) => {
+//   res.send("Site is under maintanen")
+// });
 
 app.use(express.static(__dirname + '/public'));
 
@@ -49,6 +49,6 @@ app.get('/home', (req, res) => {
     currentYear: new Date().getFullYear()
   });
 });
-app.listen(3000, ()=> {
+app.listen(port, () => {
   console.log(`server is startingo on ${port}`)
 });
