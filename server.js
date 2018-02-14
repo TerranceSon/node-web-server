@@ -24,12 +24,15 @@ app.use(express.static(__dirname + '/public'));
 
 app.get('/', (req, res) => {
   // res.send('Hello Express!')
-  res.send({
-    name: "Terrance",
-    data: [
-      'Test 1',
-      'Test 2'
-    ]
+  // res.send({
+  //   name: "Terrance",
+  //   data: [
+  //     'Test 1',
+  //     'Test 2'
+  //   ]
+  // })
+  res.render('home.hbs', {
+    pageTitle: "Test with heroku",
   })
 });
 // app.get('/about', (req, res) => {
