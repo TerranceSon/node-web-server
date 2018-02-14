@@ -50,5 +50,5 @@ app.get('/home', (req, res) => {
   });
 });
 app.listen(3000, ()=> {
-  console.log(`server is startingo on 3000 ${port}`)
+  console.log(`server is startingo on ${port}`)
 });
